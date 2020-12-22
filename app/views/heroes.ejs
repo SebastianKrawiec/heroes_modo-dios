@@ -1,0 +1,26 @@
+<%- include("partials/head") %>  
+  <body>
+  <%- include("partials/header") %>  
+  
+  <section class="heroes">     
+    <div class="container-heroes">
+     
+      <div class="container-heroes__descripcion">
+        <h1 class="container-heroes__title"><%= title %></h1>
+        <p class="container-heroes__text"><%= text %></p>
+      </div>
+      
+    </div> 
+  
+    <ul class="padre-heroes">
+      <li class="container-heroes__profesion">
+          <p>Hola mi nombre es <%= data[1] %> y soy <%= data[2] %></p> 
+      </li>      
+    </ul> 
+  </section>
+    
+
+  <%- include("partials/footer") %>  
+  <script src="/javascripts/sandbox.js"></script>
+  </body>
+</html>
